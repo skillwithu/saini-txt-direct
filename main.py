@@ -855,7 +855,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
 📄 𝐏𝐃𝐅𝐬: <code>{pdf_count}</code>  
 🎄 𝐈𝐦𝐚𝐠𝐞𝐬: <code>{img_count}</code>
 """)
-        await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
+        await bot.send_message(m.chat.id, f"<blockquote><b>✅ 𝐘𝐨𝐮𝐫 𝐓𝐚𝐬𝐤 𝐢𝐬 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐞𝐝, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐞𝐜𝐤 𝐲𝐨𝐮𝐫 𝐒𝐞𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥📱</b></blockquote>")
 
 
 @bot.on_message(filters.text & filters.private)
