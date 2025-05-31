@@ -325,20 +325,12 @@ async def start(bot, m: Message):
     )
 
     await asyncio.sleep(1)
-
-if m.chat.id in AUTH_USERS:
-    await bot.send_photo(
-        chat_id=m.chat.id,
-        photo="https://i.postimg.cc/15b1K8sB/de5ea858643bf085e0de899d0d08d131.jpg",
-        caption=(
-            f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+    if m.chat.id in AUTH_USERS:
+        await start_message.edit_text(
+            f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact - [𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻](https://t.me/staystrongbros)"
-        ),
-        reply_markup=BUTTONSCONTACT,
-        parse_mode="markdown",
-        disable_web_page_preview=True
+            f"If you face any problem contact -  [𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻](https://t.me/staystrongbros)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
     )
     else:
         await asyncio.sleep(2)
