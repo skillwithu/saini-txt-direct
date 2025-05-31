@@ -414,25 +414,29 @@ async def txt_handler(client: Client, m: Message):
         photo="https://i.postimg.cc/JtC1yjLj/IMG-20250529-123730-492.jpg",
         caption=(
             """
- ═════𓆩🔧𓆪═════╗  
-📋  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔  📋  
-╚═════𓆩🔧𓆪═════╝
+ ═════𓆩🍧𓆪═════╗  
+🐬  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔  🐬  
+╚═════𓆩🍧𓆪═════╝
 
 🧩 𝐁𝐚𝐬𝐢𝐜:
+
 • /start — 𝐒𝐭𝐚𝐫𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭  
 • /drm — 𝐃𝐫𝐚𝐰 𝐟𝐫𝐨𝐦 .𝐭𝐱𝐭  
 • /stop — 𝐒𝐭𝐨𝐩 𝐚𝐧𝐲 𝐭𝐚𝐬𝐤
 
 💻 𝐕𝐢𝐝𝐞𝐨 𝐓𝐨𝐨𝐥𝐬:
+
 • /y2t — 𝐘𝐓 𝐭𝐨 𝐓𝐞𝐱𝐭  
 • /cookies — 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐨𝐨𝐤𝐢𝐞𝐬
 
 👤 𝐔𝐬𝐞𝐫:
+
 • /id — 𝐘𝐨𝐮𝐫 𝐈𝐃  
 • /info — 𝐘𝐨𝐮𝐫 𝐃𝐞𝐭𝐚𝐢𝐥𝐬  
 • /logs — 𝐕𝐢𝐞𝐰 𝐀𝐜𝐭𝐢𝐯𝐢𝐭𝐲
 
 🔐 𝐀𝐝𝐦𝐢𝐧 𝐌𝐨𝐝𝐞:
+
 • /addauth /rmauth /users
 
 💎 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲: @staystrongbros
