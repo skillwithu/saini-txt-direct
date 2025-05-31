@@ -521,7 +521,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     await editable.edit(f"🧾 𝐖𝐨𝐰! {len(links)} 🔗 𝐋𝐢𝐧𝐤𝐬 𝐃𝐞𝐭𝐞𝐜𝐭𝐞𝐝!\n⚡ 𝐑𝐞𝐩𝐥𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐒𝐭𝐚𝐫𝐭 𝐏𝐨𝐢𝐧𝐭 — 𝐁𝐲 𝐃𝐞𝐟𝐚𝐮𝐥𝐭: 𝟏")
     if m.chat.id not in AUTH_USERS:
         print(f"User ID not in AUTH_USERS", m.chat.id)
-        await bot.send_message(m.chat.id, f"__🚫 𝐎𝐨𝐩𝐬𝐬! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 😚 𝐦𝐞𝐦𝐛𝐞𝐫__\n__𝐏𝐋𝐄𝐀𝐒𝐄 /upgrade 𝐲𝐨𝐮𝐫 𝐩𝐥𝐚𝐧__\n__𝐒𝐞𝐧𝐝 𝐦𝐞 𝐲𝐨𝐮𝐫 𝐮𝐬𝐞𝐫 𝐢𝐝 𝐟𝐨𝐫 𝐚𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧__\n__𝐘𝐨𝐮𝐫 𝐔𝐬𝐞𝐫 𝐈𝐃__ - `{m.chat.id}`")
+        await bot.send_message(m.chat.id, f"🚫 𝐎𝐨𝐩𝐬𝐬! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 😚 𝐦𝐞𝐦𝐛𝐞𝐫. 𝐏𝐋𝐄𝐀𝐒𝐄 /upgrade 𝐲𝐨𝐮𝐫 𝐩𝐥𝐚𝐧. 𝐒𝐞𝐧𝐝 𝐦𝐞 𝐲𝐨𝐮𝐫 𝐮𝐬𝐞𝐫 𝐢𝐝 𝐟𝐨𝐫 𝐚𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧. 🆔 𝐘𝐨𝐮𝐫 𝐔𝐬𝐞𝐫 𝐈𝐃 - `{m.chat.id}`")
         return
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
