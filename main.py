@@ -548,7 +548,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     raw_text4 = input4.text
     await input4.delete(True)
 
-    await editable.edit(f"Send the Video Thumb URL\nSend /d for use default\n\nYou can direct upload thumb\nSend **No** for use default")
+    await editable.edit(f"𝐒𝐞𝐧𝐝 𝐭𝐡𝐞 𝐕𝐢𝐝𝐞𝐨 𝐓𝐡𝐮𝐦𝐛 𝐔𝐑𝐋\n𝐒𝐞𝐧𝐝 /d 𝐟𝐨𝐫 𝐮𝐬𝐞 𝐝𝐞𝐟𝐚𝐮𝐥𝐭\n\n𝐘𝐨𝐮 𝐜𝐚𝐧 𝐝𝐢𝐫𝐞𝐜𝐭 𝐮𝐩𝐥𝐨𝐚𝐝 𝐭𝐡𝐮𝐦𝐛\n𝐒𝐞𝐧𝐝 No 𝐟𝐨𝐫 𝐮𝐬𝐞 𝐝𝐞𝐟𝐚𝐮𝐥𝐭")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
