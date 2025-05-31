@@ -325,50 +325,36 @@ async def start(bot, m: Message):
     )
 
     await asyncio.sleep(1)
-if m.chat.id in AUTH_USERS:
-    await start_message.edit_text(
-        f"╭─ 𝐖𝐀𝐑𝐑𝐈𝐎𝐑 𝐁𝐎𝐓 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐀𝐜𝐜𝐞𝐬𝐬 ─╮\n\n"
-        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞, {m.from_user.first_name}! 🌟\n\n"
-        f"🎉 𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫 🎉\n\n"
-        f"📚 𝐄𝐱𝐩𝐥𝐨𝐫𝐞 𝐚𝐥𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐫𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬.\n"
-        f"👉 𝐔𝐬𝐞 /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.\n\n"
-        f"❓ 𝐍𝐞𝐞𝐝 𝐚𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐜𝐞? 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐀𝐝𝐦𝐢𝐧:\n"
-        f"[𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻](https://t.me/staystrongbros)\n"
-        f"╰───────────────────────────────╯",
-        disable_web_page_preview=True,
-        reply_markup=BUTTONSCONTACT,
-        parse_mode="Markdown"
-    )
-else:
-    await asyncio.sleep(2)
-    await start_message.edit_text(
-        f"╭─ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃𝐑𝐌 𝐁𝐎𝐓 ─╮\n\n"
-        f"🎉 𝐇𝐢, {m.from_user.first_name}! 𝐆𝐫𝐞𝐚𝐭 𝐭𝐨 𝐬𝐞𝐞 𝐲𝐨𝐮! 🎉\n\n"
-        f"🔐 𝐀𝐜𝐜𝐞𝐬𝐬 𝐲𝐨𝐮𝐫 𝐩𝐫𝐞𝐟𝐞𝐫𝐫𝐞𝐝 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐛𝐞𝐥𝐨𝐰:\n\n"
-        f"📖 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬:\n"
-        f"  ─────────────────────────────\n"
-        f"  • 📚 𝐀𝐩𝐩𝐱 𝐙𝐢𝐩 + 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋\n"
-        f"  • 🎓 𝐂𝐥𝐚𝐬𝐬𝐩𝐥𝐮𝐬 𝐃𝐑𝐌 + 𝐍𝐃𝐑𝐌\n"
-        f"  • 🧑‍🏫 𝐏𝐡𝐲𝐬𝐢𝐜𝐬𝐖𝐚𝐥𝐥𝐚𝐡 𝐃𝐑𝐌\n"
-        f"  • 📚 𝐂𝐚𝐫𝐞𝐞𝐫𝐖𝐢𝐥𝐥 + 𝐏𝐃𝐅\n"
-        f"  • 🎓 𝐊𝐡𝐚𝐧 𝐆𝐒 𝐕𝐢𝐝𝐞𝐨𝐬\n"
-        f"  • 🎓 𝐒𝐭𝐮𝐝𝐲 𝐈𝐐 𝐃𝐑𝐌\n"
-        f"  • 🚀 𝐀𝐩𝐩𝐱 + 𝐄𝐧𝐜 𝐏𝐃𝐅\n"
-        f"  • 🎓 𝐕𝐢𝐦𝐞𝐨 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-        f"  • 🎓 𝐁𝐫𝐢𝐠𝐡𝐭𝐜𝐨𝐯𝐞 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-        f"  • 🎓 𝐕𝐢𝐬𝐢𝐨𝐧𝐈𝐀𝐒 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-        f"  • 🎓 𝐙𝐨𝐨𝐦 𝐕𝐢𝐝𝐞𝐨\n"
-        f"  • 🎓 𝐔𝐭𝐤𝐚𝐫𝐬𝐡 (𝐕𝐢𝐝𝐞𝐨 + 𝐏𝐃𝐅)\n"
-        f"  • 🎓 𝐀𝐥𝐥 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐔𝐑𝐋𝐬\n"
-        f"  • 🎓 𝐌𝐏𝐃 𝐔𝐑𝐋𝐬 (𝐢𝐟 𝐤𝐞𝐲 𝐤𝐧𝐨𝐰𝐧)\n"
-        f"  ─────────────────────────────\n\n"
-        f"🚫 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐝 𝐲𝐞𝐭.\n\n"
-        f"<b>💵 𝐃𝐚𝐢𝐥𝐲 𝐏𝐥𝐚𝐧:</b> ₹𝟏𝟎𝟎\n\n"
-        f"👉 𝐓𝐨 𝐮𝐩𝐠𝐫𝐚𝐝𝐞 𝐭𝐨 𝐏𝐫𝐞𝐦𝐢𝐮𝐦, 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧.\n"
-        f"╰───────────────────────────────╯",
-        disable_web_page_preview=True,
-        reply_markup=keyboard,
-        parse_mode="HTML"
+    if m.chat.id in AUTH_USERS:
+        await start_message.edit_text(
+            f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
+            f"Great! You are a premium member!\n"
+            f"Use Command : /help to get started 🌟\n\n"
+            f"If you face any problem contact -  [𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻](https://t.me/staystrongbros)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+        )
+    else:
+        await asyncio.sleep(2)
+        await start_message.edit_text(
+           f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
+           f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
+           f"Use Command : /help to get started 🌟\n\n"
+           f"<blockquote>• 📚 Appx Zip+Encrypted Url\n"
+           f"• 🎓 Classplus DRM+ NDRM\n"
+           f"• 🧑‍🏫 PhysicsWallah DRM\n"
+           f"• 📚 CareerWill + PDF\n"
+           f"• 🎓 Khan GS\n"
+           f"• 🎓 Study Iq DRM\n"
+           f"• 🚀 APPX + APPX Enc PDF\n"
+           f"• 🎓 Vimeo Protection\n"
+           f"• 🎓 Brightcove Protection\n"
+           f"• 🎓 Visionias Protection\n"
+           f"• 🎓 Zoom Video\n"
+           f"• 🎓 Utkarsh Protection(Video + PDF)\n"
+           f"• 🎓 All Non DRM+AES Encrypted URLs\n"
+           f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</blockquote>\n\n"
+           f"🚀 You are not subscribed to any plan yet!\n\n"
+           f"<blockquote>💵 Daily Plan: 100</blockquote>\n\n"
+           f"If you want to buy membership of the bot, feel free to contact the Bot Admin.\n", disable_web_page_preview=True, reply_markup=keyboard
     )
 
 @bot.on_message(filters.command(["upgrade"]))
