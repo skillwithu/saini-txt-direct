@@ -346,21 +346,17 @@ async def start(bot, m: Message):
         f"✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐨𝐧𝐥𝐢𝐧𝐞 𝐚𝐧𝐝 𝐫𝐞𝐚𝐝𝐲!\n\n"
         f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟏𝟎𝟎%"
     )
+
     await asyncio.sleep(1)
-    if m.chat.id in AUTH_USERS:
-        await start_message.delete()
-        await bot.send_photo(
-            chat_id=m.chat.id,
-            photo="https://i.postimg.cc/DfPjCqYf/c78f47eb1be7788ebe3f60079d6cbe40.jpg",
-            caption=(
-                f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
-                f"𝐆𝐫𝐞𝐚𝐭! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐦𝐞𝐦𝐛𝐞𝐫!\n"
-                f"𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
-                f"𝐈𝐟 𝐲𝐨𝐮 𝐟𝐚𝐜𝐞 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 - [𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻](https://t.me/staystrongbros)"
-            ),
-            reply_markup=BUTTONSCONTACT,
-            disable_web_page_preview=True
-        )
+if m.chat.id in AUTH_USERS:
+await start_message.edit_text(
+f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n" +
+f"𝐆𝐫𝐞𝐚𝐭! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐦𝐞𝐦𝐛𝐞𝐫!\n"
+f"𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
+f"𝐈𝐟 𝐲𝐨𝐮 𝐟𝐚𝐜𝐞 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 - 𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻\n",
+disable_web_page_preview=True,
+reply_markup=BUTTONSCONTACT
+)
     else:
         await asyncio.sleep(2)
         await start_message.edit_text(
