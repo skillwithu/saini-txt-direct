@@ -491,7 +491,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
         os.remove(x)
         return
     
-    await editable.edit(f"Total 🔗 links found are {len(links)}\nSend From where you want to download.initial is 1")
+    await editable.edit(f"🧾 𝐖𝐨𝐰! {len(links)} 🔗 𝐋𝐢𝐧𝐤𝐬 𝐃𝐞𝐭𝐞𝐜𝐭𝐞𝐝!\n⚡ 𝐑𝐞𝐩𝐥𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐒𝐭𝐚𝐫𝐭 𝐏𝐨𝐢𝐧𝐭 — 𝐁𝐲 𝐃𝐞𝐟𝐚𝐮𝐥𝐭: 𝟏")
     if m.chat.id not in AUTH_USERS:
         print(f"User ID not in AUTH_USERS", m.chat.id)
         await bot.send_message(m.chat.id, f"__Oopss! You are not a Premium member __\n__PLEASE /upgrade YOUR PLAN__\n__Send me your user id for authorization__\n__Your User id__ - `{m.chat.id}`\n")
