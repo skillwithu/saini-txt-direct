@@ -294,57 +294,57 @@ async def start(bot, m: Message):
 
     start_message = await bot.send_message(
         m.chat.id,
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
         f"╭──────────────╮\n"
         f"│ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ │\n"
         f"╰──────────────╯\n"
-        f"🔧 Initializing mech system...\n\n"
-        f"Progress: 0%"
+        f"🔧 𝐈𝐧𝐢𝐭𝐢𝐚𝐥𝐢𝐳𝐢𝐧𝐠 𝐦𝐞𝐜𝐡 𝐬𝐲𝐬𝐭𝐞𝐦...\n\n"
+        f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟎%"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
         f"╭──────────────╮\n"
         f"│ ⬢ ⬢ ⬢ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ ⬡ │\n"
         f"╰──────────────╯\n"
-        f"🔧 Loading modules...\n\n"
-        f"Progress: 25%"
+        f"🔧 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐦𝐨𝐝𝐮𝐥𝐞𝐬...\n\n"
+        f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟐𝟓%"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
         f"╭──────────────╮\n"
         f"│ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬡ ⬡ ⬡ ⬡ │\n"
         f"╰──────────────╯\n"
-        f"🔧 Activating engine core...\n\n"
-        f"Progress: 50%"
+        f"🔧 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐢𝐧𝐠 𝐞𝐧𝐠𝐢𝐧𝐞 𝐜𝐨𝐫𝐞...\n\n"
+        f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟓𝟎%"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
         f"╭──────────────╮\n"
         f"│ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬡ ⬡ │\n"
         f"╰──────────────╯\n"
-        f"🔧 Checking system stability...\n\n"
-        f"Progress: 75%"
+        f"🔧 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐬𝐲𝐬𝐭𝐞𝐦 𝐬𝐭𝐚𝐛𝐢𝐥𝐢𝐭𝐲...\n\n"
+        f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟕𝟓%"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n"
+        f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
         f"╭──────────────╮\n"
         f"│ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ ⬢ │\n"
         f"╰──────────────╯\n"
-        f"✅ System online and ready!\n\n"
-        f"Progress: 100%"
+        f"✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐨𝐧𝐥𝐢𝐧𝐞 𝐚𝐧𝐝 𝐫𝐞𝐚𝐝𝐲!\n\n"
+        f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟏𝟎𝟎%"
     )
 
     await asyncio.sleep(1)
