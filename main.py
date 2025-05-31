@@ -457,9 +457,9 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
 
 @bot.on_message(filters.command(["drm"]) )
 async def txt_handler(bot: Client, m: Message):  
-    editable = await m.reply_text(f"__🌟 𝐇𝐢𝐢, 𝐈 𝐚𝐦 𝐃𝐑𝐌 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭__\n\n"
-    f"<i>📥 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 .𝐭𝐱𝐭 𝐟𝐢𝐥𝐞 𝐰𝐡𝐢𝐜𝐡 𝐢𝐧𝐜𝐥𝐮𝐝𝐞𝐬 𝐍𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐮𝐫𝐥...\n"
-    f"💌 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤</i>")
+    editable = await m.reply_text(f"🌟 𝐇𝐢𝐢, 𝐈 𝐚𝐦 𝐃𝐑𝐌 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n"
+f"📥 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 .𝐭𝐱𝐭 𝐟𝐢𝐥𝐞 𝐰𝐡𝐢𝐜𝐡 𝐢𝐧𝐜𝐥𝐮𝐝𝐞𝐬 𝐍𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐮𝐫𝐥...\n"
+f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
