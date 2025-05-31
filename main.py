@@ -360,33 +360,40 @@ async def start(bot, m: Message):
         )
 
     else:
-         await asyncio.sleep(2)
-await start_message.edit_text(
-    f"🎊 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name} 𝐭𝐨 𝐃𝐑𝐌 𝐁𝐨𝐭! 🎊\n\n"
-    f"🔓 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐡𝐚𝐯𝐞 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚𝐥𝐥 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬 🔐 𝐢𝐧𝐜𝐥𝐮𝐝𝐢𝐧𝐠\n\n"
-    f"✨ 𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 ✨\n\n"
-    f"<blockquote>"
-    f"• 🗂️ 𝐀𝐩𝐩𝐱 𝐙𝐢𝐩 + 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐫𝐥\n"
-    f"• 🎒 𝐂𝐥𝐚𝐬𝐬𝐩𝐥𝐮𝐬 𝐃𝐑𝐌 + 𝐍𝐃𝐑𝐌\n"
-    f"• 👨‍🏫 𝐏𝐡𝐲𝐬𝐢𝐜𝐬𝐖𝐚𝐥𝐥𝐚𝐡 𝐃𝐑𝐌\n"
-    f"• 📘 𝐂𝐚𝐫𝐞𝐞𝐫𝐖𝐢𝐥𝐥 + 𝐏𝐃𝐅\n"
-    f"• 🧠 𝐊𝐡𝐚𝐧 𝐆𝐒\n"
-    f"• 📝 𝐒𝐭𝐮𝐝𝐲 𝐈𝐐 𝐃𝐑𝐌\n"
-    f"• ⚡ 𝐀𝐏𝐏𝐗 + 𝐀𝐏𝐏𝐗 𝐄𝐧𝐜 𝐏𝐃𝐅\n"
-    f"• 📺 𝐕𝐢𝐦𝐞𝐨 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-    f"• 🎥 𝐁𝐫𝐢𝐠𝐡𝐭𝐜𝐨𝐯𝐞 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-    f"• 🎯 𝐕𝐢𝐬𝐢𝐨𝐧𝐢𝐚𝐬 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
-    f"• 💻 𝐙𝐨𝐨𝐦 𝐕𝐢𝐝𝐞𝐨\n"
-    f"• 📚 𝐔𝐭𝐤𝐚𝐫𝐬𝐡 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧 (𝐕𝐢𝐝𝐞𝐨 + 𝐏𝐃𝐅)\n"
-    f"• 🔐 𝐀𝐥𝐥 𝐍𝐨𝐧 𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n"
-    f"• 🧩 𝐌𝐏𝐃 𝐔𝐑𝐋𝐬 𝐢𝐟 𝐭𝐡𝐞 𝐤𝐞𝐲 𝐢𝐬 𝐤𝐧𝐨𝐰𝐧 (𝐞.𝐠., 𝐌𝐩𝐝_𝐮𝐫𝐥?𝐤𝐞𝐲=𝐤𝐞𝐲 𝐗𝐗:𝐗𝐗)\n"
-    f"</blockquote>\n\n"
-    f"🚫 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐝 𝐭𝐨 𝐚𝐧𝐲 𝐩𝐥𝐚𝐧 𝐲𝐞𝐭!\n\n"
-    f"<blockquote>💸 𝐃𝐚𝐢𝐥𝐲 𝐏𝐥𝐚𝐧: 100</blockquote>\n\n"
-    f"📩 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐛𝐮𝐲 𝐦𝐞𝐦𝐛𝐞𝐫𝐬𝐡𝐢𝐩 𝐨𝐟 𝐭𝐡𝐞 𝐛𝐨𝐭, 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧.\n",
-    disable_web_page_preview=True,
-    reply_markup=keyboard
-)
+         from pyrogram import Client, filters
+import asyncio
+
+@Client.on_message(filters.command("start"))
+async def start_command(client, message):
+    start_message = await message.reply("Please wait...")
+
+    await asyncio.sleep(2)
+    await start_message.edit_text(
+        f"🎊 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {message.from_user.first_name} 𝐭𝐨 𝐃𝐑𝐌 𝐁𝐨𝐭! 🎊\n\n"
+        f"🔓 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐡𝐚𝐯𝐞 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚𝐥𝐥 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬 🔐 𝐢𝐧𝐜𝐥𝐮𝐝𝐢𝐧𝐠\n\n"
+        f"✨ 𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 ✨\n\n"
+        f"<blockquote>"
+        f"• 🗂️ 𝐀𝐩𝐩𝐱 𝐙𝐢𝐩 + 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐫𝐥\n"
+        f"• 🎒 𝐂𝐥𝐚𝐬𝐬𝐩𝐥𝐮𝐬 𝐃𝐑𝐌 + 𝐍𝐃𝐑𝐌\n"
+        f"• 👨‍🏫 𝐏𝐡𝐲𝐬𝐢𝐜𝐬𝐖𝐚𝐥𝐥𝐚𝐡 𝐃𝐑𝐌\n"
+        f"• 📘 𝐂𝐚𝐫𝐞𝐞𝐫𝐖𝐢𝐥𝐥 + 𝐏𝐃𝐅\n"
+        f"• 🧠 𝐊𝐡𝐚𝐧 𝐆𝐒\n"
+        f"• 📝 𝐒𝐭𝐮𝐝𝐲 𝐈𝐐 𝐃𝐑𝐌\n"
+        f"• ⚡ 𝐀𝐏𝐏𝐗 + 𝐀𝐏𝐏𝐗 𝐄𝐧𝐜 𝐏𝐃𝐅\n"
+        f"• 📺 𝐕𝐢𝐦𝐞𝐨 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 🎥 𝐁𝐫𝐢𝐠𝐡𝐭𝐜𝐨𝐯𝐞 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 🎯 𝐕𝐢𝐬𝐢𝐨𝐧𝐢𝐚𝐬 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 💻 𝐙𝐨𝐨𝐦 𝐕𝐢𝐝𝐞𝐨\n"
+        f"• 📚 𝐔𝐭𝐤𝐚𝐫𝐬𝐡 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧 (𝐕𝐢𝐝𝐞𝐨 + 𝐏𝐃𝐅)\n"
+        f"• 🔐 𝐀𝐥𝐥 𝐍𝐨𝐧 𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n"
+        f"• 🧩 𝐌𝐏𝐃 𝐔𝐑𝐋𝐬 𝐢𝐟 𝐭𝐡𝐞 𝐤𝐞𝐲 𝐢𝐬 𝐤𝐧𝐨𝐰𝐧 (𝐞.𝐠., 𝐌𝐩𝐝_𝐮𝐫𝐥?𝐤𝐞𝐲=𝐤𝐞𝐲 𝐗𝐗:𝐗𝐗)\n"
+        f"</blockquote>\n\n"
+        f"🚫 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐝 𝐭𝐨 𝐚𝐧𝐲 𝐩𝐥𝐚𝐧 𝐲𝐞𝐭!\n\n"
+        f"<blockquote>💸 𝐃𝐚𝐢𝐥𝐲 𝐏𝐥𝐚𝐧: 100</blockquote>\n\n"
+        f"📩 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐛𝐮𝐲 𝐦𝐞𝐦𝐛𝐞𝐫𝐬𝐡𝐢𝐩 𝐨𝐟 𝐭𝐡𝐞 𝐛𝐨𝐭, 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧.\n",
+        disable_web_page_preview=True,
+        reply_markup=keyboard
+    )
 
 @Client.on_message(filters.command(["upgrade"]))
 async def id_command(client, message: Message):
