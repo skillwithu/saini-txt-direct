@@ -663,7 +663,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[💻]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
+                cc = f'[💻]Video : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
                 cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n' 
                 ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
@@ -813,9 +813,21 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
 
     success_count = len(links) - failed_count
     if raw_text7 == "/d":
-        await bot.send_message(channel_id, f"**-┈━═.•°✅ Completed ✅°•.═━┈-**\n\n**🎯Batch Name : {b_name}**\n🔗 Total URLs: {len(links)} \n┃   ┠🔴 Total Failed URLs: {failed_count}\n┃   ┠🟢 Total Successful URLs: {success_count}\n┃   ┃   ┠🎥 Total Video URLs: {other_count}\n┃   ┃   ┠📄 Total PDF URLs: {pdf_count}\n┃   ┃   ┠📸 Total IMAGE URLs: {img_count}\n")
-    else:
-        await bot.send_message(channel_id, f"**-┈━═.•°✅ Completed ✅°•.═━┈-**\n\n**🎯Batch Name : {b_name}**\n<blockquote>🔗 Total URLs: {len(links)} \n┃   ┠🔴 Total Failed URLs: {failed_count}\n┃   ┠🟢 Total Successful URLs: {success_count}\n┃   ┃   ┠🎥 Total Video URLs: {other_count}\n┃   ┃   ┠📄 Total PDF URLs: {pdf_count}\n┃   ┃   ┠📸 Total IMAGE URLs: {img_count}</blockquote>\n")
+        await bot.send_message(channel_id, f"""
+<b>═════𓆩⟡𓆪═════╗</b>
+<b>✅ Upload Completed</b>
+<b>╚═════𓆩⟡𓆪═════╝</b>
+
+🎯 <b>Batch Name:</b> <code>{b_name}</code>  
+🔗 <b>Total URLs:</b> <code>{len(links)}</code>  
+❌ <b>Failed:</b> <code>{failed_count}</code>  
+✅ <b>Successful:</b> <code>{success_count}</code>  
+
+<b>🗂 File Breakdown:</b>  
+🎥 Videos: <code>{other_count}</code>  
+📄 PDFs: <code>{pdf_count}</code>  
+📸 Images: <code>{img_count}</code>
+""")
         await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
 
 
