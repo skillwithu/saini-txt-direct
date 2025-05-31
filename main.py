@@ -409,8 +409,11 @@ async def info(bot: Client, update: Message):
 
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
-    await bot.send_message(m.chat.id, text= (
-        """
+    await bot.send_photo(
+        chat_id=m.chat.id,
+        photo="https://i.postimg.cc/JtC1yjLj/IMG-20250529-123730-492.jpg",
+        caption=(
+            """
 ╭━━━🛠️ 𝐇𝐄𝐋𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 🛠️━━━╮
 
 🧩 𝐁𝐚𝐬𝐢𝐜:
@@ -434,7 +437,7 @@ async def txt_handler(client: Client, m: Message):
 ╰━━━━━━━━━━━━━━━━━━━━━━━╯
 """
         )
-    )                    
+    ) 
           
 @bot.on_message(filters.command(["logs"]))
 async def send_logs(client: Client, m: Message):  # Correct parameter name
