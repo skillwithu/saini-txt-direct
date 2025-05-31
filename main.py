@@ -346,7 +346,6 @@ async def start(bot, m: Message):
         f"✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐨𝐧𝐥𝐢𝐧𝐞 𝐚𝐧𝐝 𝐫𝐞𝐚𝐝𝐲!\n\n"
         f"𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬: 𝟏𝟎𝟎%"
     )
-
     await asyncio.sleep(1)
     if m.chat.id in AUTH_USERS:
         await start_message.delete()
