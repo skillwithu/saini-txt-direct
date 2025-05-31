@@ -500,7 +500,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     raw_text = input0.text
     await input0.delete(True)
            
-    await editable.edit("__Enter Batch Name or send /d for grabbing from text filename.__")
+    await editable.edit(f"📝 𝐄𝐧𝐭𝐞𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 𝐨𝐫 𝐬𝐞𝐧𝐝 /𝐝 𝐟𝐨𝐫 𝐠𝐫𝐚𝐛𝐛𝐢𝐧𝐠 𝐟𝐫𝐨𝐦 𝐭𝐞𝐱𝐭 𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞. 📂")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
