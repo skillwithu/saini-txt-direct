@@ -348,15 +348,17 @@ async def start(bot, m: Message):
     )
 
     await asyncio.sleep(1)
-if m.chat.id in AUTH_USERS:
-await start_message.edit_text(
-f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n" +
-f"𝐆𝐫𝐞𝐚𝐭! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐦𝐞𝐦𝐛𝐞𝐫!\n"
-f"𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
-f"𝐈𝐟 𝐲𝐨𝐮 𝐟𝐚𝐜𝐞 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 - 𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻\n",
-disable_web_page_preview=True,
-reply_markup=BUTTONSCONTACT
-)
+    
+    if m.chat.id in AUTH_USERS:
+        await start_message.edit_text(
+            f"🌟 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name}! 🌟\n\n"
+            f"𝐆𝐫𝐞𝐚𝐭! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐦𝐞𝐦𝐛𝐞𝐫!\n"
+            f"𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
+            f"𝐈𝐟 𝐲𝐨𝐮 𝐟𝐚𝐜𝐞 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 - 𝐖𝐀𝐑𝐑𝐈𝐎𝐑 👨‍💻\n",
+            disable_web_page_preview=True,
+            reply_markup=BUTTONSCONTACT
+        )
+
     else:
         await asyncio.sleep(2)
         await start_message.edit_text(
