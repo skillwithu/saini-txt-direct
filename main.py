@@ -415,7 +415,7 @@ async def txt_handler(client: Client, m: Message):
         caption=(
             """
  ═════𓆩🍧𓆪═════╗  
-🐬  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔  🐬  
+🦚  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔  🦚  
 ╚═════𓆩🍧𓆪═════╝
 
 🧩 𝐁𝐚𝐬𝐢𝐜:
@@ -457,8 +457,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
 
 @bot.on_message(filters.command(["drm"]) )
 async def txt_handler(bot: Client, m: Message):  
-    editable = await m.reply_text((f"𝐇𝐢𝐢 🌟, 𝐈 𝐚𝐦 𝐃𝐑𝐌 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 🤖\n\n"
- "📩 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 .𝐭𝐱𝐭 𝐅𝐢𝐥𝐞 𝐖𝐡𝐢𝐜𝐡 𝐈𝐧𝐜𝐥𝐮𝐝𝐞𝐬 𝐍𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐔𝐑𝐋...\n"
+    editable = await m.reply_text((f"__Hii, I am drm Downloader Bot__\n\n<i>Send Me Your txt file which enclude Name with url...\nE.g: Name: Link</i>")
  "📝 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
