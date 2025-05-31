@@ -573,11 +573,11 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     await editable.delete()
 
     if "/d" in raw_text7:
-        batch_message = await m.reply_text(f"<b>🚀 𝐓𝐚𝐫𝐠𝐞𝐭 𝐁𝐚𝐭𝐜𝐡 : {b_name}</b>")
+        batch_message = await m.reply_text(f"<b>⚡Target Batch : {b_name}</b>")
     else:
         try:
-            batch_message = await bot.send_message(chat_id=channel_id, text=f"<b>🚀 𝐓𝐚𝐫𝐠𝐞𝐭 𝐁𝐚𝐭𝐜𝐡 : {b_name}</b>")
-            await bot.send_message(chat_id=m.chat.id, text=f"<b><i>🚀 𝐓𝐚𝐫𝐠𝐞𝐭 𝐁𝐚𝐭𝐜𝐡 : {b_name}</i></b>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
+            batch_message = await bot.send_message(chat_id=channel_id, text=f"<b> Target Batch : {b_name}</b>")
+            await bot.send_message(chat_id=m.chat.id, text=f"<b><i>⚡Target Batch : {b_name}</i></b>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
         except Exception as e:
             await m.reply_text(f"**Fail Reason »** {e}\n")
             return
