@@ -361,53 +361,60 @@ async def start(bot, m: Message):
 
     else:
         await asyncio.sleep(2)
-        await start_message.edit_text(
-           f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
-           f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
-           f"Use Command : /help to get started 🌟\n\n"
-           f"<blockquote>• 📚 Appx Zip+Encrypted Url\n"
-           f"• 🎓 Classplus DRM+ NDRM\n"
-           f"• 🧑‍🏫 PhysicsWallah DRM\n"
-           f"• 📚 CareerWill + PDF\n"
-           f"• 🎓 Khan GS\n"
-           f"• 🎓 Study Iq DRM\n"
-           f"• 🚀 APPX + APPX Enc PDF\n"
-           f"• 🎓 Vimeo Protection\n"
-           f"• 🎓 Brightcove Protection\n"
-           f"• 🎓 Visionias Protection\n"
-           f"• 🎓 Zoom Video\n"
-           f"• 🎓 Utkarsh Protection(Video + PDF)\n"
-           f"• 🎓 All Non DRM+AES Encrypted URLs\n"
-           f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</blockquote>\n\n"
-           f"🚀 You are not subscribed to any plan yet!\n\n"
-           f"<blockquote>💵 Daily Plan: 100</blockquote>\n\n"
-           f"If you want to buy membership of the bot, feel free to contact the Bot Admin.\n", disable_web_page_preview=True, reply_markup=keyboard
-    )
+await start_message.edit_text(
+    f"🎉 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {m.from_user.first_name} 𝐭𝐨 𝐃𝐑𝐌 𝐁𝐨𝐭! 🎉\n\n"
+    f"🔐 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐚𝐜𝐜𝐞𝐬𝐬 𝐚𝐧𝐝 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚𝐥𝐥 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n\n"
+    f"📜 𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
+    f"<blockquote>"
+    f"• 📚 𝐀𝐩𝐩𝐱 𝐙𝐢𝐩 + 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋\n"
+    f"• 🎓 𝐂𝐥𝐚𝐬𝐬𝐩𝐥𝐮𝐬 𝐃𝐑𝐌 + 𝐍𝐃𝐑𝐌\n"
+    f"• 🧑‍🏫 𝐏𝐡𝐲𝐬𝐢𝐜𝐬𝐖𝐚𝐥𝐥𝐚𝐡 𝐃𝐑𝐌\n"
+    f"• 📘 𝐂𝐚𝐫𝐞𝐞𝐫𝐖𝐢𝐥𝐥 + 𝐏𝐃𝐅\n"
+    f"• 🎓 𝐊𝐡𝐚𝐧 𝐆𝐒\n"
+    f"• 🎓 𝐒𝐭𝐮𝐝𝐲 𝐈𝐐 𝐃𝐑𝐌\n"
+    f"• 🚀 𝐀𝐩𝐩𝐱 + 𝐀𝐩𝐩𝐱 𝐄𝐧𝐜 𝐏𝐃𝐅\n"
+    f"• 🎥 𝐕𝐢𝐦𝐞𝐨 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+    f"• 💡 𝐁𝐫𝐢𝐠𝐡𝐭𝐜𝐨𝐯𝐞 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+    f"• 🧠 𝐕𝐢𝐬𝐢𝐨𝐧𝐈𝐀𝐒 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+    f"• 🧑‍💼 𝐙𝐨𝐨𝐦 𝐕𝐢𝐝𝐞𝐨\n"
+    f"• 📄 𝐔𝐭𝐤𝐚𝐫𝐬𝐡 (𝐕𝐢𝐝𝐞𝐨 + 𝐏𝐃𝐅)\n"
+    f"• 🔐 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n"
+    f"• 🔑 𝐌𝐏𝐃 𝐔𝐑𝐋𝐬 (𝐰𝐢𝐭𝐡 𝐤𝐞𝐲 𝐞.𝐠. `mpd_url?key=KEY:XX:XX`)"
+    f"</blockquote>\n\n"
+    f"🚀 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐝 𝐭𝐨 𝐚𝐧𝐲 𝐩𝐥𝐚𝐧 𝐲𝐞𝐭!\n\n"
+    f"<blockquote>💵 𝐃𝐚𝐢𝐥𝐲 𝐏𝐥𝐚𝐧: ₹𝟏𝟎𝟎</blockquote>\n\n"
+    f"📞 𝐅𝐨𝐫 𝐦𝐞𝐦𝐛𝐞𝐫𝐬𝐡𝐢𝐩, 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧.\n",
+    disable_web_page_preview=True,
+    reply_markup=keyboard
+)
+
 
 @bot.on_message(filters.command(["upgrade"]))
 async def id_command(client, message: Message):
     chat_id = message.chat.id
     await message.reply_text(
-        f" 🎉 Welcome {message.from_user.first_name} to DRM Bot! 🎉\n\n"
-           f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
-           f"Use Command : /help to get started 🌟\n\n"
-           f"• 📚 Appx Zip+Encrypted Url\n"
-           f"• 🎓 Classplus DRM+ NDRM\n"
-           f"• 🧑‍🏫 PhysicsWallah DRM\n"
-           f"• 📚 CareerWill + PDF\n"
-           f"• 🎓 Khan GS\n"
-           f"• 🎓 Study Iq DRM\n"
-           f"• 🚀 APPX + APPX Enc PDF\n"
-           f"• 🎓 Vimeo Protection\n"
-           f"• 🎓 Brightcove Protection\n"
-           f"• 🎓 Visionias Protection\n"
-           f"• 🎓 Zoom Video\n"
-           f"• 🎓 Utkarsh Protection(Video + PDF)\n"
-           f"• 🎓 All Non DRM+AES Encrypted URLs\n"
-           f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)\n\n"
-           f"<blockquote>💵 Daily plan :100</blockquote>\n\n"
-           f"If you want to buy membership of the bot, feel free to contact the Bot Admin.\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
-    )  
+        f"🎉 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {message.from_user.first_name} 𝐭𝐨 𝐃𝐑𝐌 𝐁𝐨𝐭! 🎉\n\n"
+        f"🔐 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐚𝐜𝐜𝐞𝐬𝐬 𝐚𝐧𝐝 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚𝐥𝐥 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n\n"
+        f"📜 𝐔𝐬𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 : /help 𝐭𝐨 𝐠𝐞𝐭 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 🌟\n\n"
+        f"• 📚 𝐀𝐩𝐩𝐱 𝐙𝐢𝐩 + 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋\n"
+        f"• 🎓 𝐂𝐥𝐚𝐬𝐬𝐩𝐥𝐮𝐬 𝐃𝐑𝐌 + 𝐍𝐃𝐑𝐌\n"
+        f"• 🧑‍🏫 𝐏𝐡𝐲𝐬𝐢𝐜𝐬𝐖𝐚𝐥𝐥𝐚𝐡 𝐃𝐑𝐌\n"
+        f"• 📘 𝐂𝐚𝐫𝐞𝐞𝐫𝐖𝐢𝐥𝐥 + 𝐏𝐃𝐅\n"
+        f"• 🎓 𝐊𝐡𝐚𝐧 𝐆𝐒\n"
+        f"• 🎓 𝐒𝐭𝐮𝐝𝐲 𝐈𝐐 𝐃𝐑𝐌\n"
+        f"• 🚀 𝐀𝐩𝐩𝐱 + 𝐀𝐩𝐩𝐱 𝐄𝐧𝐜 𝐏𝐃𝐅\n"
+        f"• 🎥 𝐕𝐢𝐦𝐞𝐨 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 💡 𝐁𝐫𝐢𝐠𝐡𝐭𝐜𝐨𝐯𝐞 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 🧠 𝐕𝐢𝐬𝐢𝐨𝐧𝐈𝐀𝐒 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐢𝐨𝐧\n"
+        f"• 🧑‍💼 𝐙𝐨𝐨𝐦 𝐕𝐢𝐝𝐞𝐨\n"
+        f"• 📄 𝐔𝐭𝐤𝐚𝐫𝐬𝐡 (𝐕𝐢𝐝𝐞𝐨 + 𝐏𝐃𝐅)\n"
+        f"• 🔐 𝐍𝐨𝐧-𝐃𝐑𝐌 + 𝐀𝐄𝐒 𝐄𝐧𝐜𝐫𝐲𝐩𝐭𝐞𝐝 𝐔𝐑𝐋𝐬\n"
+        f"• 🔑 𝐌𝐏𝐃 𝐔𝐑𝐋𝐬 (𝐰𝐢𝐭𝐡 𝐤𝐞𝐲 𝐞.𝐠. `mpd_url?key=KEY:XX:XX`)\n\n"
+        f"<blockquote>💵 𝐃𝐚𝐢𝐥𝐲 𝐏𝐥𝐚𝐧: ₹𝟏𝟎𝟎</blockquote>\n\n"
+        f"📞 𝐅𝐨𝐫 𝐦𝐞𝐦𝐛𝐞𝐫𝐬𝐡𝐢𝐩, 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧.\n",
+        disable_web_page_preview=True,
+        reply_markup=BUTTONSCONTACT
+    )
 
 @bot.on_message(filters.command(["id"]))
 async def id_command(client, message: Message):
