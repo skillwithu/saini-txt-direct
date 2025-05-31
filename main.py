@@ -277,7 +277,7 @@ async def restart_handler(_, m):
         print(f"User ID not in AUTH_USERS", m.chat.id)
         await bot.send_message(
             m.chat.id, 
-            f"<blockquote>__**Oopss! You are not a Premium member**__\n"
+            "<blockquote>__🚫<b>𝐎𝐨𝐩𝐬𝐬! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫 🌟</b>✨__\n"
             f"__**PLEASE /upgrade YOUR PLAN**__\n"
             f"__**Send me your user id for authorization**__\n"
             f"__**Your User id** __- `{m.chat.id}`</blockquote>\n\n"
