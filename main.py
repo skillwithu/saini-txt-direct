@@ -543,7 +543,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     else:
         CR = raw_text3
 
-    await editable.edit(""🔸𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐏𝐖 𝐓𝐨𝐤𝐞𝐧 𝐅𝐨𝐫 𝐌𝐏𝐃 𝐔𝐑𝐋\n🔸𝐒𝐞𝐧𝐝 /anything 𝐟𝐨𝐫 𝐮𝐬𝐞 𝐝𝐞𝐟𝐚𝐮𝐥𝐭")
+    await editable.edit("🔸𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐏𝐖 𝐓𝐨𝐤𝐞𝐧 𝐅𝐨𝐫 𝐌𝐏𝐃 𝐔𝐑𝐋\n🔸𝐒𝐞𝐧𝐝 /anything 𝐟𝐨𝐫 𝐮𝐬𝐞 𝐝𝐞𝐟𝐚𝐮𝐥𝐭")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
