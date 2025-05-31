@@ -438,7 +438,7 @@ async def info(bot: Client, update: Message):
 async def txt_handler(client: Client, m: Message):
     await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://i.postimg.cc/JtC1yjLj/IMG-20250529-123730-492.jpg",
+        photo="https://i.postimg.cc/DfPjCqYf/c78f47eb1be7788ebe3f60079d6cbe40.jpg",
         caption=(
             """
  ═════𓆩🍧𓆪═════╗  
