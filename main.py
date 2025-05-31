@@ -814,19 +814,19 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     success_count = len(links) - failed_count
     if raw_text7 == "/d":
         await bot.send_message(channel_id, f"""
-<b>═════𓆩⟡𓆪═════╗</b>
-<b>✅ Upload Completed</b>
-<b>╚═════𓆩⟡𓆪═════╝</b>
+<b>╭─❍ 𓆩🪐𓆪 ❍─╮</b>  
+<b>✅ 𝐔𝐩𝐥𝐨𝐚𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞</b>  
+<b>╰─❍ 𓆩🪐𓆪 ❍─╯</b>
 
-🎯 <b>Batch Name:</b> <code>{b_name}</code>  
-🔗 <b>Total URLs:</b> <code>{len(links)}</code>  
-❌ <b>Failed:</b> <code>{failed_count}</code>  
-✅ <b>Successful:</b> <code>{success_count}</code>  
+🔮 <b>𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞:</b> <code>{b_name}</code>  
+🔗 <b>𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋𝐬:</b> <code>{len(links)}</code>  
+🗑 <b>𝐅𝐚𝐢𝐥𝐞𝐝:</b> <code>{failed_count}</code>  
+✅ <b>𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥:</b> <code>{success_count}</code>  
 
-<b>🗂 File Breakdown:</b>  
-🎥 Videos: <code>{other_count}</code>  
-📄 PDFs: <code>{pdf_count}</code>  
-📸 Images: <code>{img_count}</code>
+<b>🗂 𝐅𝐢𝐥𝐞 𝐁𝐫𝐞𝐚𝐤𝐝𝐨𝐰𝐧:</b>  
+💻 𝐕𝐢𝐝𝐞𝐨𝐬: <code>{other_count}</code>  
+📄 𝐏𝐃𝐅𝐬: <code>{pdf_count}</code>  
+🎄 𝐈𝐦𝐚𝐠𝐞𝐬: <code>{img_count}</code>
 """)
         await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
 
