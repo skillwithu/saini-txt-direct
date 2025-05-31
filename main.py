@@ -414,9 +414,9 @@ async def txt_handler(client: Client, m: Message):
         photo="https://i.postimg.cc/JtC1yjLj/IMG-20250529-123730-492.jpg",
         caption=(
             """
- ═════𓆩⟡𓆪═════╗  
-🐬  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔 🐬  
-╚═════𓆩⟡𓆪═════╝
+ ═════𓆩🔧𓆪═════╗  
+📋  𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔  📋  
+╚═════𓆩🔧𓆪═════╝
 
 🧩 𝐁𝐚𝐬𝐢𝐜:
 • /start — 𝐒𝐭𝐚𝐫𝐭 𝐭𝐡𝐞 𝐁𝐨𝐭  
