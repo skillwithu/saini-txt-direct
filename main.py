@@ -993,9 +993,8 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'📼 𝐍𝐚𝐦𝐞 » `{name} [{res}].mp4`\n🌀 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » `{res}`\n🔗 𝐋𝐢𝐧𝐤 » <a href="{link}">__**Download**__</a>\n\n💾 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫 » `{CREDIT}`'
-
-cc1 = f'📕 𝐍𝐚𝐦𝐞 » `{name}`\n🌀 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » `{res}`\n🔗 𝐋𝐢𝐧𝐤 » <a href="{link}">__**Download**__</a>\n\n💾 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫 » `{CREDIT}`'
+                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name} [{res}].mp4`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
+                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
                   
                 if "drive" in url:
                     try:
