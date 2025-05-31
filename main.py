@@ -532,8 +532,7 @@ f"💫 𝐄.𝐠: 𝐍𝐚𝐦𝐞: 𝐋𝐢𝐧𝐤")
     except Exception:
             res = "UN"
 
-    await editable.edit("𝐄𝐧𝐭𝐞𝐫 𝐭𝐡𝐞 𝐜𝐫𝐞𝐝𝐢𝐭 𝐧𝐚𝐦𝐞 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐜𝐚𝐩𝐭𝐢𝐨𝐧. 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐛𝐨𝐭𝐡 𝐚 𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐜𝐫𝐞𝐝𝐢𝐭 𝐢𝐧 𝐭𝐡𝐞 𝐜𝐚𝐩𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐟𝐢𝐥𝐞 𝐧𝐚𝐦𝐞, 𝐬𝐞𝐩𝐚𝐫𝐚𝐭𝐞 𝐭𝐡𝐞𝐦 𝐰𝐢𝐭𝐡 𝐚 𝐜𝐨𝐦𝐦𝐚 (,). 𝐨𝐫 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐝𝐞𝐟𝐚𝐮𝐥𝐭 𝐭𝐡𝐞𝐧 𝐬𝐞𝐧𝐝 /d
-<blockquote><i>𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐟𝐨𝐫 𝐜𝐚𝐩𝐭𝐢𝐨𝐧 𝐨𝐧𝐥𝐲: Admin<br>𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐟𝐨𝐫 𝐛𝐨𝐭𝐡 𝐜𝐚𝐩𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐟𝐢𝐥𝐞 𝐧𝐚𝐦𝐞: Admin,Prename</i></blockquote>")
+    await editable.edit("__Enter the credit name for the caption. If you want both a permanent credit in the caption and the file name, separate them with a comma (,). or you want default then send /d__\n\n<blockquote><i>Example for caption only: Admin\nExample for both caption and file name: Admin,Prename</i></blockquote>")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
